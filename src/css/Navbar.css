@@ -1,0 +1,41 @@
+nav{
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+    background: rgb(104, 39, 39);
+    padding: 1px 3px;
+    box-shadow: 0 5px 15px rgb(0,0,0,0.06);
+  }
+ 
+  #navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #navbar li{
+    list-style: none;
+    padding: 0 20px ;
+    position: relative;
+  }
+  #navbar li a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color:  rgb(227, 215, 215);
+    transition: 0.3s ease-in-out;
+ 
+  }
+  #navbar li a:hover{
+    color: rgb(240, 240, 6);
+  }
+ 
+  nav a img{
+    width: 110px;
+    height: 80px;
+  }
+ 
+  #mobile i{
+    color: white;
+ 
+  }
+  

@@ -1,0 +1,19 @@
+.image-1 img{
+    width: 100%;
+    height: 700px;
+} 
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color:rgb(247, 207, 8) ;
+}
+h2, h3{
+    position: relative;
+    bottom: 450px;
+    right: 400px;
+    font-style: italic;
+    font-weight: 500;
+    
+}
+
