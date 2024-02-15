@@ -5,13 +5,17 @@ nav{
     background: rgb(104, 39, 39);
     padding: 1px 3px;
     box-shadow: 0 5px 15px rgb(0,0,0,0.06);
+    position: fixed;
+    width: 100%;
   }
  
   #navbar{
     display: flex;
     align-items: center;
     justify-content: center;
+  
   }
+
   #navbar li{
     list-style: none;
     padding: 0 20px ;
@@ -33,9 +37,44 @@ nav{
     width: 110px;
     height: 80px;
   }
+  #mobile{
+    display: none;
+  }
  
   #mobile i{
     color: white;
  
   }
+  @media screen and (max-width:769px) {
+    #navbar{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      position: fixed;
+      top: 90px;
+      right: -300px;
+      width: 300px;
+      height: 100vh;
+      background-color:rgb(118, 54, 54);
+      box-shadow: 0 40px 60px rgb(0 0 0 0.1); 
+      padding: 20px 0 0 5px ;
+      transition: 0.3s ease-in-out;
+    }
+    #navbar.active{
+        right: 0;
+      
+    }
+    #navbar li{
+    margin-bottom: 20px;
+    }
+    #mobile{
+      display: block;
+    }
+    #mobile i{
+      font-size: 24px;
+      cursor: pointer;
+    }
+  }
+  
   
