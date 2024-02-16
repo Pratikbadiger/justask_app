@@ -18,7 +18,7 @@ class Navbar extends Component{
         <li><a href="/">SEARCH ITEAM</a></li>
           <li><a href="/">PROFILES</a></li>
           <li><a href="/">HOME</a></li>
-          <li><a href="/Shop">SHOP</a></li>
+          <li><a href="/">SHOP</a></li>
           <li><a href="/">CART</a></li>
           <li><a href="/">CONTECT US</a></li>
           

@@ -27,6 +27,7 @@ Cash on Delivery | Free Delivery</h4>
 Legal and Policies<br></br>Notices and Returns
             </ui>
           </div>
+          <div className="col"></div>
           
           </div>
         <hr />
