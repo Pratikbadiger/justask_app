@@ -6,6 +6,7 @@
     position: relative;
     bottom: 0;
     width: 100%;
+
     
   }
  .container{
@@ -19,4 +20,30 @@
  }
 .list-unstyled1{
     font-size: small;
+}
+.row{
+    display: flex;
+    justify-content: space-around;
+}
+.social-link{
+    display: flex;
+    align-items: end ;
+    position: relative;
+    left: 200px;
+    bottom: 50px;
+    
+}
+.contact-us{
+    display: flex;
+    align-items: end ;
+    right: 500px;
+}
+.icon-link{
+    padding: 20px;
+
+}
+
+.detail{
+    position: relative;
+    left: 100px;
 }

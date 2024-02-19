@@ -1,0 +1,53 @@
+[
+    [
+        {
+            "id": 1,
+            "img": "/static/screen1.jpg",
+            "name": "Headphone"
+        },
+        {
+            "id": 2,
+            "img": "/static/screen2.jpg",
+            "name": "Watch"
+        },
+        {
+            "id": 3,
+            "img": "/static/screen3.jpg",
+            "name": "Madrabbit earbuds"
+        }
+    ],
+    [
+        {
+            "id": 1,
+            "img": "/static/screen4.jpg",
+            "name": "JBL headphone"
+        },
+        {
+            "id": 2,
+            "img": "/static/screen5.webp",
+            "name": "Powerbank"
+        },
+        {
+            "id": 3,
+            "img": "/static/screen6.jpg",
+            "name": "Gamepad"
+        }
+    ],
+    [
+        {
+            "id": 1,
+            "img": "/static/screen7.jpg",
+            "name": "Realmesmartwatch"
+        },
+        {
+            "id": 2,
+            "img": "/static/screen8.jpg",
+            "name": "Neackband"
+        },
+        {
+            "id": 3,
+            "img": "/static/screen9.jpg",
+            "name": "Speaker"
+        }
+    ]
+]

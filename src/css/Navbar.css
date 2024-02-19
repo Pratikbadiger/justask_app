@@ -5,8 +5,9 @@ nav{
     background:  rgb(27, 9, 9);
     padding: 1px 3px;
     box-shadow: 0 5px 15px rgb(0,0,0,0.06);
-    position: fixed;
+    position:relative;
     width: 100%;
+  
   }
  
   #navbar{
@@ -70,11 +71,22 @@ nav{
     }
     #mobile{
       display: block;
+      position:relative;
     }
     #mobile i{
       font-size: 24px;
       cursor: pointer;
     }
   }
-  
+
+  .search-bar {
+    display: flex;
+    justify-content: center;
+    height: 35px;
+    top: 20px;
+    padding: 20px;
+    align-items: center;
+}
+
+
   

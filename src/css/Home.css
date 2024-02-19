@@ -16,5 +16,16 @@ h2, h3{
     font-weight: 500;
     
 }
+#button{
+    border: 1px solid black;
+    border-radius: 50px;
+    color: rgb(250, 246, 246) solid;
+    text-decoration: none;
+    padding: 10px;
+    background-color: rgb(248, 85, 4);
+    font-weight: 200px;
+
+
+}
 
 
