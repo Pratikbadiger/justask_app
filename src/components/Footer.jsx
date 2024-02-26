@@ -20,8 +20,8 @@ Cash on Delivery | Free Delivery</h4>
           </div>
 
           <div className="detail">
-            <h4>WELL ANOTHER COLUMN</h4>
-            <ui>
+            <h4 id="h4">WELL ANOTHER COLUMN</h4>
+            <ui id="ui">
              Careers<br></br>Become a supplier<br></br>Hall of Fame<br></br>
 Legal and Policies<br></br>Notices and Returns
             </ui>
@@ -29,25 +29,25 @@ Legal and Policies<br></br>Notices and Returns
           <div className="social-link">
                                 <div className="icon-link">
                                     <Link>
-                                        <InstagramOutlined style={{ color: "#fff", fontSize: "30px" }} />
+                                        <InstagramOutlined style={{ color: "#000", fontSize: "30px" }} />
                                     </Link>
 
                                 </div>
                                 <div className="icon-link">
                                     <Link>
-                                        <FacebookOutlined style={{ color: "#fff", fontSize: "30px" }} />
+                                        <FacebookOutlined style={{ color: "#000", fontSize: "30px" }} />
                                     </Link>
 
                                 </div>
                                 <div className="icon-link">
                                     <Link>
-                                        <LinkedinOutlined style={{ color: "#fff", fontSize: "30px" }} />
+                                        <LinkedinOutlined style={{ color: "#000", fontSize: "30px" }} />
                                     </Link>
 
                                 </div>
                                 <div className="icon-link">
                                     <Link>
-                                        <YoutubeOutlined style={{ color: "#fff", fontSize: "30px" }} />
+                                        <YoutubeOutlined style={{ color: "#000", fontSize: "30px" }} />
                                     </Link>
                                 </div>
                             </div>

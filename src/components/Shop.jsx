@@ -5,19 +5,22 @@ import { HeartOutlined, ShoppingCartOutlined } from '@ant-design/icons';
 import Details from "../data/Shopdata.json"
 import Navbar from './Navbar';
 import Footer from './Footer';
+import Cart from './Cart';
 
 const Shop = ({ data }) => {
+    const cartItems = [];
 return (
         <>
         <div className='navbar'>
         <Navbar/>
         </div>
-        <h1>Welcom to Our Shop</h1>
+        <div>
+            {/* Your other content */}
+            <Cart cartItems={cartItems} />
+        </div>
+        <h1 className='h1'>Welcom to Our Shop</h1>
             <div className="card-section">
                 <div className="card-container">
-                    <div className="top-heading">
-                        <h2>Top Laptop Skins</h2>
-                    </div>
                     <div className='card-box'>
                         {
                             Details.map((container, index) => (
@@ -55,14 +58,10 @@ return (
                                 </Row>
                             ))
                         }
-
                     </div>
-
                 </div>
             </div>
-            <div className='footer'>
-            <Footer/>
-            </div>
+        <Footer/>
         </>
     )
 }

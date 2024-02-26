@@ -2,7 +2,7 @@ nav{
     display: flex;
     align-items: top;
     justify-content: space-between;
-    background:  rgb(27, 9, 9);
+    background: transparent;
     padding: 1px 3px;
     box-shadow: 0 5px 15px rgb(0,0,0,0.06);
     position:relative;
@@ -26,12 +26,12 @@ nav{
     text-decoration: none;
     font-size: 1.3rem;
     font-weight: 600;
-    color:  rgb(227, 215, 215);
+    color:  rgb(12, 11, 11);
     transition: 0.3s ease-in-out;
  
   }
   #navbar li a:hover{
-    color: rgb(240, 240, 6);
+    color: rgb(251, 251, 245);
   }
  
   nav a img{
@@ -43,7 +43,7 @@ nav{
   }
  
   #mobile i{
-    color: white;
+    color: rgb(20, 18, 18);
  
   }
   @media screen and (max-width:769px) {
@@ -52,7 +52,7 @@ nav{
       flex-direction: column;
       align-items: flex-start;
       justify-content: flex-start;
-      position: fixed;
+      position: relative;
       top: 90px;
       right: -300px;
       width: 300px;
@@ -61,6 +61,7 @@ nav{
       box-shadow: 0 40px 60px rgb(0 0 0 0.1); 
       padding: 20px 0 0 5px ;
       transition: 0.3s ease-in-out;
+      text-align: center;
     }
     #navbar.active{
         right: 0;
@@ -87,6 +88,21 @@ nav{
     padding: 20px;
     align-items: center;
 }
+.keys{
+  position: relative;
+  top: 20px;
+}
+.profile{
+  height: 30px;
+  width: 30px;
+  position: relative;
+  top: 20px;
+  color: rgb(14, 13, 12);
+}
+.profile:hover{
+  color: white;
+}
+
 
 
   

@@ -1,31 +1,69 @@
 .image-1 img{
-    width: 100%;
-    height: 700px;
+    width: 50%;
+    height: 500px;
+    position: relative;
+    left: 300px;
+    top: 50px;
 } 
 
 body{
     padding: 0;
     margin: 0;
-    background-color:rgb(247, 207, 8) ;
+    background: linear-gradient(to right,rgb(108, 198, 234),rgb(237, 237, 190))
 }
 h2, h3{
     position: relative;
-    bottom: 450px;
+    bottom: 300px;
     right: 400px;
     font-style: italic;
-    font-weight: 500;
+    font-weight: 1000;
+    font-size: 70px;
     
 }
-#button{
+#button1{
     border: 1px solid black;
     border-radius: 50px;
     color: rgb(250, 246, 246) solid;
     text-decoration: none;
     padding: 10px;
-    background-color: rgb(248, 85, 4);
+    background-color: rgb(226, 219, 219);
     font-weight: 200px;
+    position: relative;
+    bottom:50px ;
+    height: 50px;
+    width: 100px;
 
 
 }
+h2{
+    font-weight: 400;
+}
+.buy{
+    position: relative;
+    bottom: 280px;
+    right: 500px;
+    height: 50px;
+    width: 100px;
+    background-color: rgb(226, 219, 219);
+    color: black;
+}
+.buy1{
+    position: relative;
+    bottom: 280px;
+    right: 400px;
+    height: 50px;
+    width: 100px;
+    background-color: rgb(226, 219, 219);
+    color: black;
 
+}
+.top{
+    position: relative;
+    bottom:200px
 
+}
+.card-box{
+    position: relative;
+    bottom: 100px;
+
+}
