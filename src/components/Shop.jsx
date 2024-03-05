@@ -5,20 +5,16 @@ import { HeartOutlined, ShoppingCartOutlined } from '@ant-design/icons';
 import Details from "../data/Shopdata.json"
 import Navbar from './Navbar';
 import Footer from './Footer';
-import Cart from './Cart';
 
 const Shop = ({ data }) => {
-    const cartItems = [];
 return (
         <>
         <div className='navbar'>
         <Navbar/>
         </div>
-        <div>
-            {/* Your other content */}
-            <Cart cartItems={cartItems} />
-        </div>
+
         <h1 className='h1'>Welcom to Our Shop</h1>
+        <br></br>
             <div className="card-section">
                 <div className="card-container">
                     <div className='card-box'>
@@ -45,7 +41,7 @@ return (
                                                                     <HeartOutlined style={{ fontSize: '24px' }} />
                                                                 </div>
                                                                 <div className='cart'>
-                                                                    <ShoppingCartOutlined style={{ fontSize: '24px' }} />
+                                                                    <ShoppingCartOutlined  style={{ fontSize: '24px' }}/>
                                                                 </div>
                                                             </div>
                                                         </Col>

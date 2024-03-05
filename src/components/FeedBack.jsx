@@ -24,7 +24,6 @@ const FeedBack=()=>{
             </center>
             </div>
             </div>
-        
         <div className="footer">
         <Footer/>
         </div>

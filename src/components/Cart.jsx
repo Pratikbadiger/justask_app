@@ -1,22 +1,13 @@
-// cart.jsx
-import React from 'react';
-import { Card } from 'antd';
+import React from "react";
+import "../css/Cart.css";
+import Navbar from "./Navbar";
 
-
-const Cart = ({ cartItems }) => {
-    return (
-        <div className="cart-container">
-            <h1>Your Cart</h1>
-            <div className="cart-items">
-                {cartItems.map(item => (
-                    <Card key={item.id} className="cart-item">
-                        <img src={item.img} alt="item" />
-                        <h3>{item.name}</h3>
-                    </Card>
-                ))}
-            </div>
+const Cart =()=>{
+    return(
+        <div>
+            <Navbar/>
+            <h1>cart page</h1>
         </div>
-    );
+    )
 }
-
 export default Cart;

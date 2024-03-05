@@ -1,11 +1,38 @@
-import React from "react";
 import "../css/Home.css";
 import Navbar from "./Navbar";
 import img from '../assets/images/main-headphone.png';
+import img1 from "../assets/images/oip.png";
+import img2 from "../assets/images/head3.png";
 import Footer from "./Footer";
 import { HeartOutlined, ShoppingCartOutlined } from '@ant-design/icons';
 import Details from "../data/Shopdata1.json"
 import { Card, Col, Row } from 'antd';
+import React, { useState, useEffect } from 'react';
+
+
+const PhotoSlider = ({ photos }) => {
+    const [currentPhotoIndex, setCurrentPhotoIndex] = useState(0);
+  
+    useEffect(() => {
+      const intervalId = setInterval(() => {
+        setCurrentPhotoIndex((prevIndex) =>
+          prevIndex === photos.length - 1 ? 0 : prevIndex + 1
+        );
+      }, 2000); // Change photo every 2 seconds (adjust as needed)
+  
+      return () => clearInterval(intervalId);
+    }, [photos.length]);
+  
+    return (
+      <img
+        src={photos[currentPhotoIndex]}
+        alt={`Photo ${currentPhotoIndex + 1}`}
+        style={{ width: '40%', height:'400px' }}
+        loading="lazy"
+      />
+    );
+  };
+  
 
 
 const Home =()=>{
@@ -15,7 +42,7 @@ const Home =()=>{
       <Navbar/>
     </div>
     <div className="image-1">
-      <img src={img} alt="" />
+    <PhotoSlider photos={[img, img1,img2]} />
       <b><h2>The Westmire</h2></b>
       <h3>A56 Headset</h3>
       <button className="buy">Buy</button>
@@ -69,4 +96,5 @@ const Home =()=>{
     
     );
 }
+
 export default Home;

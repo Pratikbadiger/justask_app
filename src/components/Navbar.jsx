@@ -1,5 +1,5 @@
 import { Component } from "react";
-import logo from "../assets/images/logo-removebg-preview.png";
+import logo from "../assets/images/logo.png";
 import { CgProfile } from "react-icons/cg";
 import { SearchOutlined} from '@ant-design/icons';
 import { Input } from 'antd';
@@ -17,7 +17,7 @@ class Navbar extends Component{
       <a>
         <img src={logo} alt="" />
       </a>
-      <a href="Profiles"><CgProfile className="profile"/></a>
+      <a href="/SignUp"><CgProfile className="profile"/></a>
       <div className="keys">
         <ul id="navbar" className={this.state.clicked ?"#navbar active":"#navbar" }>
           <li><a href="/">HOME</a></li>
