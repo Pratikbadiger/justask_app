@@ -13,7 +13,12 @@
         {
             "id": 3,
             "img": "/static/screen3.jpg",
-            "name": "Madrabbit earbuds"
+            "name": "Madrabbit"
+        },
+         {
+            "id": 2,
+            "img": "/static/screen2.jpg",
+            "name": "Watch"
         }
     ],
     [
@@ -31,7 +36,12 @@
             "id": 3,
             "img": "/static/screen6.jpg",
             "name": "Gamepad"
-        }
+        },
+        {
+           "id": 2,
+           "img": "/static/screen2.jpg",
+           "name": "Watch"
+       }
     ],
     [
         {
@@ -48,6 +58,11 @@
             "id": 3,
             "img": "/static/screen9.jpg",
             "name": "Speaker"
-        }
+        },
+        {
+           "id": 2,
+           "img": "/static/screen2.jpg",
+           "name": "Watch"
+       }
     ]
 ]

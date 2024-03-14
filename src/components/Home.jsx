@@ -1,8 +1,8 @@
 import "../css/Home.css";
 import Navbar from "./Navbar";
 import img from '../assets/images/main-headphone.png';
-import img1 from "../assets/images/oip.png";
-import img2 from "../assets/images/head3.png";
+import img2 from "../assets/images/image.png";
+import img1 from "../assets/images/New_Project.png";
 import Footer from "./Footer";
 import { HeartOutlined, ShoppingCartOutlined } from '@ant-design/icons';
 import Details from "../data/Shopdata1.json"
@@ -18,7 +18,7 @@ const PhotoSlider = ({ photos }) => {
         setCurrentPhotoIndex((prevIndex) =>
           prevIndex === photos.length - 1 ? 0 : prevIndex + 1
         );
-      }, 2000); // Change photo every 2 seconds (adjust as needed)
+      }, 2000); 
   
       return () => clearInterval(intervalId);
     }, [photos.length]);
@@ -26,15 +26,13 @@ const PhotoSlider = ({ photos }) => {
     return (
       <img
         src={photos[currentPhotoIndex]}
-        alt={`Photo ${currentPhotoIndex + 1}`}
-        style={{ width: '40%', height:'400px' }}
+        alt={` ${currentPhotoIndex + 1}`}
+        style={{ width:'40%', height:'400px' }}
         loading="lazy"
       />
     );
   };
   
-
-
 const Home =()=>{
     return(
       <div>
@@ -51,31 +49,31 @@ const Home =()=>{
     <div className="top">
     <h1>Top Products</h1>
     </div>
-    <div className='card-box'>
+    <div className='card-box' >
                         {
                             Details.map((container, index) => (
-                                <Row key={index} gutter={20} style={{ marginTop: "30px" }}> 
+                                <Row key={index} gutter={8} style={{ marginTop: "30px" }}>
                                     {
                                         container.map((data) => (
-                                            <Col xs={24} sm={8} md={8} lg={8}>
+                                            <Col xs={24} sm={6} md={6} lg={6}>
                                                 <Card
                                                     hoverable
-                                                    style={{ width:"80%", border: "none", borderRadius: "10px" }}
+                                                    style={{ width: "100%", border: "none", borderRadius: "10px" }}
                                                     cover={<img alt="screen" src={data.img} style={{ height: 280 }} />}
                                                 >
-                                                    <Row gutter={30}>
-                                                        <Col md={12}>
+                                                    <Row gutter={8}>
+                                                        <Col md={8}>
                                                             <div className="screen-name">
                                                                 <h4>{data.name}</h4>
                                                             </div>
                                                         </Col>
-                                                        <Col md={12}>
+                                                        <Col md={8}>
                                                             <div className="card-icons">
                                                                 <div className='wishlist'>
                                                                     <HeartOutlined style={{ fontSize: '24px' }} />
                                                                 </div>
                                                                 <div className='cart'>
-                                                                    <ShoppingCartOutlined style={{ fontSize: '24px' }} />
+                                                                    <ShoppingCartOutlined style={{ fontSize: '24px' }}/>
                                                                 </div>
                                                             </div>
                                                         </Col>
@@ -88,7 +86,6 @@ const Home =()=>{
                                 </Row>
                             ))
                         }
-
                     </div>
     <button id="button1"><a href="Shop">See more</a></button>
     <Footer/>

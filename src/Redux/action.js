@@ -1,8 +1,7 @@
-export const setAction  = payload=>({
-type:'CART',
-payload
-})
-
-export const actionTest = ()=>{
-    return 100;
-}
+export const addToCart = (item) => {
+    return {
+      type: 'ADD_TO_CART',
+      payload: item
+    }
+  }
+  

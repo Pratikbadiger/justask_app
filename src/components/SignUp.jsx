@@ -1,70 +1,49 @@
-import React, { useState } from 'react';
-import '../css/SignUp.css';
-import Navbar from "../components/Navbar";
-import Login from "../components/Login";
+import React from 'react'
+import "../css/SignUp.css";
+import { useState } from 'react';
+import Navbar from "./Navbar"
 
-const SignupForm = () => {
-  const [formData, setFormData] = useState({
-    username: '',
-    email: '',
-    password: '',
-  });
+ export const SignUp = () => {
+  <div>
+  <Navbar/>
+</div>
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log(formData); 
-  };
-
+  const [action,setAction] = useState('Sign Up');
   return (
-    <>
-    <div>
-        < Navbar />
-    </div>
-   
-    <div className="signup-container">
-      <h5><ins>Sign Up</ins></h5>
-      <form onSubmit={handleSubmit} className="signup-form">
-        <div className="form-group">
-          <label htmlFor="username">Username</label>
-          <input
-            type="text"
-            id="username"
-            name="username"
-            value={formData.username}
-            onChange={handleChange}
-          />
-        </div>
-        <div className="form-group">
-          <label htmlFor="email">Email</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-          />
-        </div>
-        <div className="form-group">
-          <label htmlFor="password">Password</label>
-          <input
-            type="password"
-            id="password"
-            name="password"
-            value={formData.password}
-            onChange={handleChange}
-          />
-        </div>
-        <button type="submit">Sign Up</button>
-        <button className="button" onClick={Login}>Login</button>
-      </form>
-    </div>
-    </>
-  );
-};
+    <div className='container'>
+      <div className="header">
+        <div className="text">{action}</div>
+        <div className="underline"></div>
+      </div>
+      
+      <div className="inputs">
 
-export default SignupForm;
+        {action==="Login"?<div></div>:<div className="input">
+          <input type="text" name="" id="" placeholder='Name' />
+        </div>}
+        
+        
+        <div className="input">
+          <input type="email id" name="" id="" className='demo' placeholder='Email Id' />
+        </div>
+        
+        <div className="input">
+          <input type="password" name="" id="" className='demo' placeholder='Password'/>
+        </div>
+        
+      </div>
+      {action==="SignUp"?<div></div>:<div className="forgot-password">Lost Password?<span>Click Here!</span></div>}
+      
+
+      <div className="submit-conatiner">
+        <div className={action==="Login"?"submit gray":"submit"} onClick={()=>{setAction("SignUp")}} >SignUp</div>
+        <div className={action==="Sign Up"?"submit gray":"submit"} onClick={()=>{setAction("Login")}}>Login</div>
+      </div>
+      </div>
+
+  
+    
+  )
+}
+
+export default  SignUp;

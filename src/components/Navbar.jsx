@@ -15,7 +15,7 @@ class Navbar extends Component{
     <>
     <nav>
       <a>
-        <img src={logo} alt="" />
+        <img src={logo} alt=""/>
       </a>
       <a href="/SignUp"><CgProfile className="profile"/></a>
       <div className="keys">

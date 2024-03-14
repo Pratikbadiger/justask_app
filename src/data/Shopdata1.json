@@ -13,7 +13,12 @@
         {
             "id": 3,
             "img": "/static/screen3.jpg",
-            "name": "Madrabbit earbuds"
+            "name": "Madrabbit"
+        },
+        {
+            "id": 3,
+            "img": "/static/screen3.jpg",
+            "name": "Madrabbit"
         }
     ]
    

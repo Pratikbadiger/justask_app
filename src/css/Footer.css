@@ -1,62 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mona+Sans:wght@400;700&display=swap');
 
-.main-footer {
-    color: rgb(6, 6, 6);
-    background-color: transparent;
-    padding-top: 0em;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    border: 1px solid black;
+* {
+    margin: 0;
+    padding: 0;
+}
 
-    
-  }
- .container{
-    display: flex;
-    bottom: 0%;
-    font-size: 20px;
-    font-weight: bold;
-    display: flex;
-    flex-direction: row;
-    letter-spacing: 2px;
- }
-.list-unstyled1{
-    font-size: small;
-    
+.footer-section {
+    background-color:transparent;
+    color: #111010;
 }
-.list-unstyled{
-    position: relative;
-    top: 2px;
+.footer-container{
+    padding: 40px 40px;
+    box-shadow: 0 5px 15px rgb(0,0,0,0.20);
 }
-.row{
+.contact-us {
+    text-align: center;
+    font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 32px;
+    color: #111010;
+}
+@media (max-width:769px){
+    .contact-us{
+        font-size: 30px;
+    }
+}
+@media (max-width:769px){
+    .ant-row{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.contact-box {
+    margin-top: 30px;
+    color: #111010;
+}
+
+.menu-item {
+    display: inline;
+    padding: 10px;
+}
+
+@media (max-width:769px){
+    .menu-item{
+        padding: 5px;
+    }
+}
+
+.menu-item a {
+    font-size: 15px;
+    font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    color: #131313;
+}
+
+@media (max-width:769px){
+    .menu-item a{
+        font-size: 12px;
+    }
+}
+
+.social-link {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
 }
-.social-link{
-    display: flex;
-    align-items: end ;
-    position: relative;
-    left: 200px;
-    bottom: 50px;
-    
-}
-.contact-us{
-    display: flex;
-    align-items: end ;
-    right: 500px;
-}
-.icon-link{
+
+.icon-link {
     padding: 20px;
+}
+
+.copyright{
+    margin-top: 30px;
+}
+.copyright p{
+    text-align: center;
+    font-size: 15px;
+    color: #0e0d0d;
+    font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.copyright p a{
+    text-decoration: none;
+    color: #fff;
+}
+.b{
+    font-size: medium;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 
 }
 
-.detail{
-    position: relative;
-    left: 100px;
-}
-#h4{
-    font-weight: 900;
-    padding: 5px;
-}
-#ui{
-    font-size: small
-}
+

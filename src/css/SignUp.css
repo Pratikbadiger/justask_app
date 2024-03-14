@@ -1,55 +1,93 @@
- .signup-container {
-    position: relative;
-    top: 20px;
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 600px;
+    
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 9px;
+    width: 100%;
+    margin-top: 30px;
+    
+}
 
-  } 
-  
-  .signup-form .form-group {
-    margin-bottom: 20px;
-  }
-  
-  .signup-form label {
-    display: block;
-    margin-bottom: 5px;
-  }
-  
-  .signup-form input {
+.text{
+    color: blue;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.underline{
+    width: 60px;
+    height: 6px;
+    background-color: blue;
+    border-radius: 9px;
+}
+
+.inputs{
+    margin-top: 55px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    border-radius: 30px;
+}
+
+
+
+
+.input input {
+    border-radius: 40px;
+    width: 300px;
+    height: 60px;
+    font-size: 20px;
+    align-items: center;
+    
+}
+
+.forgot-password{
+    padding-left: 62px;
+    margin-top: 27;
+    color: rgb(128, 0, 58);
+    font-size: 18px;
+}
+
+.forgot-password span{
+    cursor: pointer;
+    color: rgb(93, 0, 255);
+}
+
+.submit-conatiner{
+    display: flex;
+    gap: 30px;
+    margin: 60px auto;
+}
+
+.submit{
     display: flex;
     justify-content: center;
-    width: 30%;
-    padding: 10px;
-    font-size: 16px;
-    border-radius: 20px;
-    border: 1px solid #eb3131;
-    position: relative;
-    left: 460px;
-  }
-  
-  .signup-form button {
-    width: 10%;
-    padding: 10px;
-    font-size: 18px;
-    background-color: #00a6ffa1;
-    color: #fff;
-    border: none;
-    border-radius: 20px;
+    align-items: center;
+    width: 220px;
+    height: 59px;
+    color:white;
+    background:blue;
+    border-radius: 50px;
+    font-size: 19px;
+    font-weight: 700;
     cursor: pointer;
-   
-  }
-  
-  .signup-form button:hover {
-    background-color: #ea7501;
-  }
-  h5{
-    position: relative;
-    top:-20px;
-    left: 10px;
-    font-size: 70px;
-    font-style: oblique;
-    font-weight: 5000;
-    border: 20px;
-  }
- .button{
-    position: relative;
-    left: 2px;
- }
+}
+
+.gray{
+    background: #EAEAEA;
+    color: #676767;
+}
+
+.demo{
+    align-items: center;
+    justify-content: center;
+}
+
